@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- SideBar Section -->
+    <div id="sideBar" class=" d-flex">
+        <div id="navingContainer" class=" float-left text-white d-flex flex-column justify-content-between ">
+            <div id="navItem" class=" d-flex flex-column">
+                <a class="navItem m-2" href="#movies" id="nowPlaying">Now Playing</a>
+                <a class="navItem m-2" href="#movies" id="popular">Popular</a>
+                <a class="navItem m-2" href="#movies" id="topRated">Top Rated</a>
+                <a class="navItem m-2" href="#movies" id="trending">Trending</a>
+                <a class="navItem m-2" href="#movies" id="upcoming">Upcoming</a>
+                <a class="navItem m-2" href="#contactUs">Contatct Us</a>
+            </div>
+            <div>
+                <i class="fab fa-facebook-f navItem px-2"></i>
+                <i class="fab fa-twitter navItem px-2 "></i>
+                <i class="fab fa-github navItem px-2"></i>
+                <p class="text-muted">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+        <div class="tools d-flex flex-column justify-content-between bg-light vh-100 text-center">
+            <img src="images/logo.png" alt="" class=" img-fluid p-4">
+            <i class="text-white bg-light text-dark fa fa-align-justify" id="sideBarToggle"></i>
+            <div>
+                <p>
+                    <i class="fas fa-globe"></i>
+                </p>
+                <p>
+                    <i class="fas fa-share-alt"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- loading -->
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!-- search  -->
+    <section id="search" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <input type="text" id="movieByWord" placeholder="get movies by word ..." class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                </div>
+                <div class="col-md-6 ">
+                    <input type="text" id="searchGenre" placeholder="Search genre ..." class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Movies  -->
+    <section id="movies">
+        <div class="container">
+            <div id="showMovies" class="row">
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contactUs">
+        <div class="container">
+            <h2 class="text-white">Contact Us...</h2>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 p-3">
+                    <input type="text" id="registName" placeholder="Enter Your Name" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                    <p class="text-danger font-weight-light mb-3 text-center"></p>
+
+                </div>
+                <div class="col-md-6 p-3">
+                    <input type="email" id="registEmail" placeholder="Enter Email" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                    <p class="text-danger font-weight-light mb-3 text-center"></p>
+
+                </div>
+                <div class="col-md-6 p-3">
+                    <input type="number" placeholder="Enter Phone" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+
+                </div>
+                <div class="col-md-6 p-3">
+                    <input type="number" placeholder="Enter Age" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+
+                </div>
+                <div class="col-md-6 p-3">
+                    <input type="password" id="registPassword" placeholder="Enter Password" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                    <p class="text-danger font-weight-light mb-3 text-center"></p>
+
+                </div>
+                <div class="col-md-6 p-3">
+                    <input type="password" placeholder="Enter RePassword" id="rePassword" class=" text-center text-muted border-right-0 border-top-0  border-left-0 form-control bg-transparent">
+                    <p class="text-danger font-weight-light mb-3 text-center"></p>
+
+                </div>
+            </div>
+            <button class="btn btn-outline-danger btn-lg" id="submitButton">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

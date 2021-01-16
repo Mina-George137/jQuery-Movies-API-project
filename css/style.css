@@ -1,0 +1,140 @@
+    body {
+        background-color: #000000f2;
+        overflow: hidden;
+        padding: 5px;
+    }
+    
+    .layer {
+        background-color: rgba(255, 255, 255, .7);
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    #movie {
+        cursor: pointer;
+    }
+    
+    #movie:hover .layer {
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    
+    #sideBar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9;
+    }
+    
+    #navingContainer {
+        background-color: #000000f2;
+        padding: 15px;
+        height: 100vh;
+    }
+    
+    #sideBar #navingContainer p {
+        transition: color 0.45s;
+        cursor: pointer;
+    }
+    
+    .navItem {
+        padding: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all 1s;
+        color: #fff;
+    }
+    
+    .navItem:hover {
+        color: red;
+    }
+    
+    .animation {
+        top: 0;
+        color: white;
+    }
+    
+    .tools {
+        width: 75px;
+    }
+    
+    #sideBarToggle {
+        font-size: 35px;
+        padding: 20px;
+        cursor: pointer;
+        /* background-color: #333; */
+    }
+    
+    .loading {
+        background-color: #000000f2;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 99;
+    }
+    
+    .spinner {
+        margin: 250px auto;
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .spinner>div {
+        background-color: #fff;
+        height: 100%;
+        width: 6px;
+        display: inline-block;
+        -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+    
+    .spinner .rect2 {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+    }
+    
+    .spinner .rect3 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+    
+    .spinner .rect4 {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+    }
+    
+    .spinner .rect5 {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+    }
+    
+    @-webkit-keyframes sk-stretchdelay {
+        0%,
+        40%,
+        100% {
+            -webkit-transform: scaleY(0.4)
+        }
+        20% {
+            -webkit-transform: scaleY(1.0)
+        }
+    }
+    
+    @keyframes sk-stretchdelay {
+        0%,
+        40%,
+        100% {
+            transform: scaleY(0.4);
+            -webkit-transform: scaleY(0.4);
+        }
+        20% {
+            transform: scaleY(1.0);
+            -webkit-transform: scaleY(1.0);
+        }
+    }
